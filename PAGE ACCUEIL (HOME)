@@ -1,0 +1,25 @@
+export default function Home() {
+  return (
+    <div style={{
+      padding: 40,
+      textAlign: "center",
+      fontFamily: "Arial",
+      background: "#0a0a0a",
+      color: "white",
+      minHeight: "100vh"
+    }}>
+      <h1>BrandonPay SaaS</h1>
+      <p>Vends en ligne facilement</p>
+
+      <a href="/dashboard">
+        <button style={{
+          padding: 12,
+          marginTop: 20,
+          cursor: "pointer"
+        }}>
+          Commencer
+        </button>
+      </a>
+    </div>
+  );
+}
