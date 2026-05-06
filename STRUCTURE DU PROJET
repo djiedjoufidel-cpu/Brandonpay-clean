@@ -1,0 +1,8 @@
+brandonpay-clean/
+ ├── pages/
+ │   ├── index.js
+ │   ├── dashboard.js
+ │   └── api/
+ │       └── pay.js
+ ├── package.json
+ └── next.config.js
