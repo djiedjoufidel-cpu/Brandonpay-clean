@@ -1,0 +1,21 @@
+export default function handler(req, res) {
+  try {
+    const body = JSON.parse(req.body || "{}");
+
+    if (!body.name || !body.price) {
+      return res.status(400).json({
+        error: "Missing data"
+      });
+    }
+
+    // simulation paiement (safe pour Vercel)
+    return res.status(200).json({
+      link: "https://example.com/payment"
+    });
+
+  } catch (error) {
+    return res.status(500).json({
+      error: "Server error"
+    });
+  }
+}
